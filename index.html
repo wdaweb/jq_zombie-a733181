@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game</title>
+    <title>2022-jq-canvas-game</title>
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
@@ -61,7 +61,7 @@
               <p>撞到怪物及障礙物會扣取生命值</p>
             </div>
           </div>
-          <button type="button" class="illustrate-btn btn">確定</button>
+          <button type="button" class="btn illustrate-btn">確定</button>
         </div>
         <div class="select-user">
           <h1 class="select-title">選擇角色</h1>
@@ -115,49 +115,14 @@
           </form>
         </div>
       </div>
-      <div class="game-container">
-        <div class="bg">
-          <div class="back_mountain"></div>
-          <div class="front_mountain"></div>
-          <img src="./src/img/bg/L1_sky.png" />
-          <div class="street"></div>
-        </div>
-        <div class="score">
-          <div class="score-imgs">
-            <img src="./src/img/score/life.png" class="life" />
-            <img src="./src/img/score/life.png" class="life" />
-            <img src="./src/img/score/life.png" class="life" />
-          </div>
-          <p class="score-text">Score:<span class="score-number">0</span></p>
-        </div>
-        <div class="time">
-          <p class="time-text"></p>
-        </div>
-        <div class="game"></div>
-        <div class="game-btns">
+      <canvas class="canvas none"></canvas>
+      <div class="end-container none">
+        <h2 class="end-title"></h2>
+        <img src="" class="end-img none" />
+        <p>得了 <span class="end-score"></span> 分</p>
+        <div>
           <button type="button" class="btn restart">重新開始</button>
           <button type="button" class="btn back-select">回到選單</button>
-        </div>
-        <div class="lose">
-          <h2 class="lose-title">OPS!</h2>
-          <p class="lose-score">
-            總分：<span class="lose-score-number"></span> 分
-          </p>
-          <div class="lose-btns">
-            <button type="button" class="btn restart">重新開始</button>
-            <button type="button" class="btn back-select">回到選單</button>
-          </div>
-        </div>
-        <div class="win">
-          <h2 class="win-title">YOU WIN</h2>
-          <div class="win-user"></div>
-          <p class="win-score">
-            總分：<span class="win-score-number"></span> 分
-          </p>
-          <div class="lose-btns">
-            <button type="button" class="btn restart">重新開始</button>
-            <button type="button" class="btn back-select">回到選單</button>
-          </div>
         </div>
       </div>
     </div>
